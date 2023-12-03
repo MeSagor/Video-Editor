@@ -1,0 +1,8 @@
+video_editor_venv/
+output_clips/
+new_resulation/
+.vscode/
+*.mp4
+*.wav
+*.mp3
+
