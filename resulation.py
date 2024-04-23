@@ -3,7 +3,7 @@ import os
 
 new_general_name = 'clip'
 output_folder_path = 'new_resulation'
-input_folder_path = os.path.join(os.getcwd(), 'output_clips')
+input_folder_path = os.path.join(os.getcwd(), 'clips')
 file_list = os.listdir(input_folder_path)
 
 # sort the list of filenames according to the number within their names
@@ -23,7 +23,8 @@ for i, filename in enumerate(file_list):
         continue
     output_video_name = f'{new_general_name}{i}.mp4'
     input_video_path = os.path.join(input_folder_path, filename)
-    command = f'ffmpeg -i {input_video_path} -vf scale=320:320 {output_video_name}'
+    # command = f'ffmpeg -i {input_video_path} -vf scale=320:320 {output_video_name}'
+    command = f'ffmpeg -i {input_video_path} -r 15 {output_video_name}'
     os.system(command)
     command = f'mv {new_general_name}{i}.mp4 ./{output_folder_path}'
     os.system(command)
