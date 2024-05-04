@@ -1,6 +1,9 @@
 video_editor_venv/
 output_clips/
 new_resulation/
+raw_videos/
+renamed_output_clips/
+detector/
 .vscode/
 *.mp4
 *.wav

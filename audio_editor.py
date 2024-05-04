@@ -1,9 +1,9 @@
 from moviepy.editor import VideoFileClip, AudioFileClip
 
-video_path = 'ankar1.mp4'
-external_audio_path = 'refine.wav'
-output_audio_path = 'output_audio.wav'
-output_video_path = 'refine_video.mp4'
+video_path = 'new_resulation/mamun3.mp4'
+external_audio_path = 'refine2.wav'
+output_audio_path = 'output_audio2.wav'
+output_video_path = 'refine_video2.mp4'
 
 video_clip = VideoFileClip(video_path)
 

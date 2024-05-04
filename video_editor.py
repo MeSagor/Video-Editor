@@ -81,15 +81,15 @@ def do_video_clipping(speaking_segments, output_directory, general_file_name, vi
 
 
 # Perameters
-input_video_path = 'refine_video.mp4'
+input_video_path = 'refine_video2.mp4'
 output_audio_path = 'audio.wav'
 output_directory = 'output_clips/'
 # output_directory = 'word_clips/'
 output_general_file_name = 'clip'
-video_number = 0
+video_number = 30
 padding_time = 0.25
 threshold = 0.06
-window_time = 0.6
+window_time = 0.35
 
 # Load the video
 video = VideoFileClip(input_video_path)
